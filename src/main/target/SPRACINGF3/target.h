@@ -115,7 +115,7 @@
 #define RANGEFINDER_HCSR04_TRIGGER_PIN       PB0
 #define RANGEFINDER_HCSR04_ECHO_PIN          PB1
 
-#define USE_BARO_MS5611
+/*#define USE_BARO_MS5611
 #define USE_BARO_BMP085
 
 #define USE_MAG
@@ -126,7 +126,7 @@
 
 #define USE_MAG_DATA_READY_SIGNAL
 #define ENSURE_MAG_DATA_READY_IS_HIGH
-#define MAG_INT_EXTI            PC14
+#define MAG_INT_EXTI            PC14*/
 #endif
 
 #if !defined(IRCSYNERGYF3)
@@ -183,9 +183,9 @@
 #define CURRENT_METER_ADC_PIN   PA5
 #define RSSI_ADC_PIN            PB2
 
-#define USE_OSD
+/*#define USE_OSD
 #define USE_OSD_OVER_MSP_DISPLAYPORT
-#define USE_SLOW_MSP_DISPLAYPORT_RATE_WHEN_UNARMED
+#define USE_SLOW_MSP_DISPLAYPORT_RATE_WHEN_UNARMED*/
 #endif
 
 #define USE_MSP_CURRENT_METER
