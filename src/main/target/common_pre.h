@@ -46,7 +46,7 @@
 #define USE_GYRO_DATA_ANALYSE
 #endif
 
-/*#ifdef STM32F4
+#ifdef STM32F4
 #define USE_SRAM2
 #if defined(STM32F40_41xxx)
 #define USE_FAST_RAM
@@ -135,7 +135,7 @@
 #define DEFAULT_AUX_CHANNEL_COUNT       6
 #endif
 
-/*#ifdef USE_ITCM_RAM
+#ifdef USE_ITCM_RAM
 #define FAST_CODE                   __attribute__((section(".tcm_code")))
 #define FAST_CODE_NOINLINE          NOINLINE
 #else
@@ -204,7 +204,7 @@
 #define USE_CLI_BATCH
 #define USE_RESOURCE_MGMT
 #define USE_RUNAWAY_TAKEOFF     // Runaway Takeoff Prevention (anti-taz)
-#define USE_SERVOS
+//#define USE_SERVOS
 #define USE_TELEMETRY
 //#define USE_TELEMETRY_FRSKY_HUB
 #define USE_TELEMETRY_SMARTPORT
@@ -213,24 +213,24 @@
 #if (FLASH_SIZE > 128)
 #define USE_GYRO_OVERFLOW_CHECK
 #define USE_YAW_SPIN_RECOVERY
-//#define USE_DSHOT_DMAR
+#define USE_DSHOT_DMAR
 //#define USE_SERIALRX_FPORT      // FrSky FPort
 //#define USE_TELEMETRY_CRSF
 //#define USE_TELEMETRY_SRXL
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 12))
 #define USE_CMS
-#define USE_MSP_DISPLAYPORT
+//#define USE_MSP_DISPLAYPORT
 #define USE_MSP_OVER_TELEMETRY
 //#define USE_LED_STRIP
 #endif
 
-/*#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 11))
-#define USE_VTX_COMMON
+#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 11))
+/*#define USE_VTX_COMMON
 #define USE_VTX_CONTROL
 #define USE_VTX_SMARTAUDIO
-#define USE_VTX_TRAMP
-#endif//VTX TABLES*/
+#define USE_VTX_TRAMP*/
+#endif//VTX TABLES
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 10))
 #define USE_VIRTUAL_CURRENT_METER
@@ -262,9 +262,9 @@
 #define USE_TPA_MODE
 #endif
 
-/*#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 5))
-#define USE_PWM
-#endif*/
+#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 5))
+//#define USE_PWM
+#endif
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 4))
 #define USE_HUFFMAN
@@ -272,7 +272,7 @@
 #define USE_PINIOBOX
 #endif
 
-/*#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 3))
+#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 3))
 #ifdef USE_SERIALRX_SPEKTRUM
 #define USE_SPEKTRUM_BIND
 #define USE_SPEKTRUM_BIND_PLUG
@@ -286,9 +286,9 @@
 #endif
 #endif//Spektrum Stuff*/
 
-/*#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 2))
-#define USE_TELEMETRY_HOTT
-#define USE_TELEMETRY_LTM
+#if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 2))
+//#define USE_TELEMETRY_HOTT
+//#define USE_TELEMETRY_LTM
 //#define USE_SERIALRX_SUMH       // Graupner legacy protocol
 //#define USE_SERIALRX_XBUS       // JR
 #endif//Don't need*/
