@@ -170,10 +170,10 @@
 #define DMA_RW_AXI
 #endif//Only applies to F4+ boards*/
 
-#define USE_BRUSHED_ESC_AUTODETECT  // Detect if brushed motors are connected and set defaults appropriately to avoid motors spinning on boot
+//#define USE_BRUSHED_ESC_AUTODETECT  // Detect if brushed motors are connected and set defaults appropriately to avoid motors spinning on boot
 
 #define USE_MOTOR
-#define USE_PWM_OUTPUT
+//#define USE_PWM_OUTPUT
 #define USE_DMA
 #define USE_TIMER
 
@@ -205,14 +205,14 @@
 #define USE_RESOURCE_MGMT
 #define USE_RUNAWAY_TAKEOFF     // Runaway Takeoff Prevention (anti-taz)
 //#define USE_SERVOS
-#define USE_TELEMETRY
+//#define USE_TELEMETRY
 //#define USE_TELEMETRY_FRSKY_HUB
-#define USE_TELEMETRY_SMARTPORT
+//#define USE_TELEMETRY_SMARTPORT
 #endif
 
 #if (FLASH_SIZE > 128)
 #define USE_GYRO_OVERFLOW_CHECK
-#define USE_YAW_SPIN_RECOVERY
+//#define USE_YAW_SPIN_RECOVERY
 #define USE_DSHOT_DMAR
 //#define USE_SERIALRX_FPORT      // FrSky FPort
 //#define USE_TELEMETRY_CRSF
@@ -221,7 +221,7 @@
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 12))
 #define USE_CMS
 //#define USE_MSP_DISPLAYPORT
-#define USE_MSP_OVER_TELEMETRY
+//#define USE_MSP_OVER_TELEMETRY
 //#define USE_LED_STRIP
 #endif
 
@@ -237,7 +237,7 @@
 //#define USE_CAMERA_CONTROL
 #define USE_ESC_SENSOR
 #define USE_SERIAL_4WAY_BLHELI_BOOTLOADER
-#define USE_RCDEVICE
+//#define USE_RCDEVICE
 #endif
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 9))
@@ -252,7 +252,7 @@
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 7))
 #define USE_THROTTLE_BOOST
-#define USE_INTEGRATED_YAW_CONTROL
+//#define USE_INTEGRATED_YAW_CONTROL
 #endif
 
 #if ((FLASH_SIZE > 256) || (FEATURE_CUT_LEVEL < 6))
@@ -320,8 +320,8 @@
 //#define USE_OSD_ADJUSTMENTS
 #define USE_SENSOR_NAMES
 //#define USE_SERIALRX_JETIEXBUS
-#define USE_TELEMETRY_IBUS
-#define USE_TELEMETRY_IBUS_EXTENDED
+//#define USE_TELEMETRY_IBUS
+//#define USE_TELEMETRY_IBUS_EXTENDED
 //#define USE_TELEMETRY_JETIEXBUS
 //#define USE_TELEMETRY_MAVLINK
 #define USE_UNCOMMON_MIXERS
@@ -338,7 +338,7 @@
 #define USE_SERIAL_4WAY_SK_BOOTLOADER
 #define USE_CMS_FAILSAFE_MENU
 //#define USE_CMS_GPS_RESCUE_MENU
-#define USE_TELEMETRY_SENSORS_DISABLED_DETAILS
+//#define USE_TELEMETRY_SENSORS_DISABLED_DETAILS
 //#define USE_VTX_TABLE
 #define USE_PERSISTENT_STATS
 #define USE_PROFILE_NAMES
