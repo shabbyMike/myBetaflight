@@ -1,4 +1,5 @@
 # myBetaflight
-Optimized F3 targets 
+Optimized F3 Targets 
+    --SpracingF3/flysky protocol 
 
-Turned off certain features on F3 targets to allow for successful firmware flashing utilizing Betaflight source code 
+Please verify that you have proper failsafes set up before flying with this firmware!!!
